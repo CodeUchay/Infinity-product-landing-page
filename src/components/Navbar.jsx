@@ -13,6 +13,7 @@ import {
   MdCategory,
   MdBusinessCenter,
 } from "react-icons/md";
+import infinitylogo from '../images/infinitylogo.png'
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -28,8 +29,8 @@ function Navbar() {
       </div>
       {/* Chefkim Logo */}
       <div className="flex justify-center items-center gap-2">
-        <PiInfinityBold size={50} className="" />
-        <h1 className="font-bold text-3xl  ">Infinity</h1>
+        <PiInfinityBold size={30} className="" />
+        <img src={infinitylogo} style={{ width: '100px', height: 'auto' }} alt="Infinity Logo" />
       </div>
       {/* Search Icon and input */}
       <div className="  rounded-full  shadow-white shadow-sm flex items-center px-2 w-[200px] sm:w-[400px] lg:w-[500px]">
@@ -62,9 +63,10 @@ function Navbar() {
           size={30}
           className="absolute right-4 top-4 cursor-pointer "
         />
-        <div className="flex justify-start items-center">
-          <h2 className="text-2xl p-4">Infinity</h2>
-          <PiInfinityBold size={20} />
+        <div className="flex justify-start items-center m-5 gap-1">
+        <PiInfinityBold size={30} />
+        <img src={infinitylogo} style={{ width: '100px', height: 'auto' }} alt="Infinity Logo" />
+         
         </div>
         <nav>
           <ul className="flex flex-col p-4 ">
