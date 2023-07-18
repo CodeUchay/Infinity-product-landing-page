@@ -45,12 +45,12 @@ const ImageSlider = () => {
   };
 
   return (
-    <>
-      <h1 className=" text-4xl bg-gray-900 text-gray-100 flex font-bold p-5 justify-end items-center">
+    <div className="bg-gray-900">
+      <h1 className=" text-3xl  text-gray-100 flex font-bold p-5 justify-center items-center">
         Our Media
       </h1>
 
-      <div className="max-w-[1400px] h-[580px] text-white bg-gray-900 w-full m-auto py-16 px-4 relative group">
+      <div className="max-w-[1600px] h-[580px] text-white bg-gray-900 w-full m-auto py-16 px-4 relative group">
         <div
           className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
           style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
@@ -76,7 +76,7 @@ const ImageSlider = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
