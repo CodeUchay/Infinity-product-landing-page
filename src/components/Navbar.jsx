@@ -27,10 +27,11 @@ function Navbar() {
           className="text-white shadow-white shadow-sm hover:scale-105 duration-100"
         />
       </div>
-      {/* Chefkim Logo */}
       <div className="flex justify-center items-center gap-2">
         <PiInfinityBold size={30} className="" />
+  <div className="hidden md:block">
         <img src={infinitylogo} style={{ width: '100px', height: 'auto' }} alt="Infinity Logo" />
+      </div>
       </div>
       {/* Search Icon and input */}
       <div className="  rounded-full  shadow-white shadow-sm flex items-center px-2 w-[200px] sm:w-[400px] lg:w-[500px]">
